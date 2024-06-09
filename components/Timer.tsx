@@ -57,6 +57,11 @@ const Timer = () => {
         <span>{timeLeft.seconds}</span>
         seconds
       </div>
+      <div className="col-span-4 text-center">
+        <p className="text-3xl mt-8">
+          End of military service at 25 / 11 / 2023 🎉
+        </p>
+      </div>
     </div>
   );
 };

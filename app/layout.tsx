@@ -18,17 +18,31 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} overflow-y-hidden`}>
+      <body className={`${inter.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="text-center pt-2">
+          <div className="text-center pt-6">
             <ModeToggle />
           </div>
           {children}
+          {/* add footer that contain my name "a7mdmo74" & link to my github repo */}
+          <footer className="text-center mt-8">
+            <p>
+              Made by{' '}
+              <a
+                href="https://github.com/a7mdmo74"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500"
+              >
+                a7mdmo74
+              </a>
+            </p>
+          </footer>
         </ThemeProvider>
       </body>
     </html>
