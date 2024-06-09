@@ -41,7 +41,7 @@ const Timer = () => {
   }, []);
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-12">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-6">
         <div className="timer">
           <span>{timeLeft.days}</span>
           days
@@ -59,7 +59,7 @@ const Timer = () => {
           seconds
         </div>
       </div>
-      <div className="text-center mt-12">
+      <div className="text-center mt-6">
         <p className="text-xl md:text-3xl mt-8">
           End of military service at <br />
           25 / 11 / 2024 🎉
