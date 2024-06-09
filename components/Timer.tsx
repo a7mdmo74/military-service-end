@@ -40,29 +40,32 @@ const Timer = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-12">
-      <div className="timer">
-        <span>{timeLeft.days}</span>
-        days
+    <>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-12">
+        <div className="timer">
+          <span>{timeLeft.days}</span>
+          days
+        </div>
+        <div className="timer">
+          <span>{timeLeft.hours}</span>
+          hours
+        </div>
+        <div className="timer">
+          <span>{timeLeft.minutes}</span>
+          minutes
+        </div>
+        <div className="timer">
+          <span>{timeLeft.seconds}</span>
+          seconds
+        </div>
       </div>
-      <div className="timer">
-        <span>{timeLeft.hours}</span>
-        hours
-      </div>
-      <div className="timer">
-        <span>{timeLeft.minutes}</span>
-        minutes
-      </div>
-      <div className="timer">
-        <span>{timeLeft.seconds}</span>
-        seconds
-      </div>
-      <div className="col-span-4 text-center">
-        <p className="text-3xl mt-8">
-          End of military service at 25 / 11 / 2024 🎉
+      <div className="text-center mt-12">
+        <p className="text-xl md:text-3xl mt-8">
+          End of military service at <br />
+          25 / 11 / 2024 🎉
         </p>
       </div>
-    </div>
+    </>
   );
 };
 
